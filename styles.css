@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #111827;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+
+#game {
+  background: #020617;
+  border: 2px solid #4b5563;
+  box-shadow: 0 0 20px rgba(15, 23, 42, 0.8);
+}
+
+.info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+#score {
+  font-weight: 700;
+  color: #22c55e;
+}
+
+button#restart, button#pause {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  background: #4f46e5;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button#restart:hover, button#pause:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+button#restart:active, button#pause:active {
+  transform: translateY(0);
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
